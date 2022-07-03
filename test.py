@@ -9,8 +9,7 @@ def binary_map(feature):
 
 def feature_transformations(data):
 
-    replace_list = ['OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
-                    'StreamingTV', 'StreamingMovies']
+    replace_list = ['OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies']
     data[replace_list] = data[replace_list].replace(
         'No internet service', 'No')
 
